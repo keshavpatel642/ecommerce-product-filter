@@ -1,0 +1,44 @@
+# E-Commerce Product Multi-Filter Sidebar
+
+A full-stack e-commerce product browsing interface with server-side filtering and sorting.
+
+## Features
+
+- Multi-select category filtering
+- Minimum and maximum price filtering
+- Minimum star rating filtering
+- Combined filtering using intersection logic
+- Price: Low to High sorting
+- Price: High to Low sorting
+- Top Rated sorting
+- Instant filter updates
+- No-results state with Reset Filters
+- Responsive product grid
+
+## Tech Stack
+
+- React
+- Vite
+- Axios
+- Node.js
+- Express.js
+- CSS
+
+## Architecture
+
+The frontend handles user interactions and filter state.
+
+The backend handles the business logic and applies filters in this order:
+
+```text
+Product Inventory
+      ↓
+Category Filter
+      ↓
+Price Filter
+      ↓
+Rating Filter
+      ↓
+Sorting
+      ↓
+Filtered Results
